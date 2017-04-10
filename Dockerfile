@@ -13,6 +13,7 @@ VOLUME ["/var/cache/nginx"]
 # add my configuration files
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD domain.conf /etc/nginx/conf.d/domain.conf
+ADD www /var/www/
 
 EXPOSE 80 443
 
